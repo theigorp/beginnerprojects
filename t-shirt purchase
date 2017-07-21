@@ -1,0 +1,1788 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+int main()
+{
+    int brand,tShirt,size,quantity;
+
+	float HBprice1 = 39.99;
+	float HBprice2 = 48.99;
+	float HBprice3 = 55.99;
+	float HBprice4 = 62.99;
+
+	float VEprice1 = 87.49;
+	float VEprice2 = 154.99;
+	float VEprice3 = 179.99;
+	float VEprice4 = 299.99;
+
+
+	float ARprice1 = 88.88;
+	float ARprice2 = 109.99;
+	float ARprice3 = 249.99;
+	float ARprice4 = 674.99;
+
+	float LAprice1 = 79.99;
+	float LAprice2 = 84.99;
+	float LAprice3 = 64.99;
+	float LAprice4 = 99.99;
+
+	float LVprice1 = 304.99;
+	float LVprice2 = 399.99;
+	float LVprice3 = 480.99;
+	float LVprice4 = 599.99;
+
+	float total;
+
+	printf("Choose the brand of your shirt:\n1.HUGO BOSS\n2.Versace\n3.Armani\n4.Lacoste\n5.Louis Vuitton\n");
+	scanf(" %d", &brand);
+
+	system("CLS");
+
+	switch(brand)
+	{
+		case 1 : printf("Choose your shirt:\n1.Classic HUGO BOSS print\n2.White to blue fade\n3.Mirror letters\n4.Black and white thunder\n");
+				 scanf(" %d", &tShirt);
+
+				 system("CLS");
+
+				 switch(tShirt)
+				 {
+				 	case 1 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 2 :  printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 3 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 4 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	default : printf("Incorrect input\n");
+
+
+
+
+				 }
+				 break;
+
+
+
+
+		case 2 : printf("Choose your shirt:\n1.Signature print\n2.Classic Medusa\n3.Projects print\n4.Domino Foulard Graphic\n");
+				 scanf(" %d", &tShirt);
+
+				 system("CLS");
+
+				 switch(tShirt)
+				 {
+				 	case 1 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 2 :  printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 3 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 4 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = HBprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	default : printf("Incorrect input\n");
+
+
+
+
+				 }
+				 break;
+
+
+
+
+		case 3 : printf("Choose your shirt:\n1.Emporio Armani classic\n2.Shirt/hoodie Giorgio Armani\n3.Cotton Jersey V-neck\n4.Jungle");
+				 scanf(" %d", &tShirt);
+
+				 system("CLS");
+
+				 switch(tShirt)
+				 {
+				 	case 1 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 2 :  printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 3 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 4 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = ARprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	default : printf("Incorrect input\n");
+
+
+
+
+				 }
+				 break;
+
+
+
+		case 5 : printf("Choose your shirts:\n1.Classic Polo\n2.Crew neck striped\n3.Croc The Game\n4.Zip Pocket Pique\n");
+				 scanf(" %d", &tShirt);
+
+				 system("CLS");
+
+				 switch(tShirt)
+				 {
+				 	case 1 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 2 :  printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 3 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 4 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LAprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	default : printf("Incorrect input\n");
+
+
+
+
+				 }
+				 break;
+
+
+
+		case 4 : printf("Choose your shirt:\n1.NOUVEL HORIZON\n2.Tonal Boy\n3.Allover Animals\n4.LV pattern\n");
+				 scanf(" %d", &tShirt);
+
+				 system("CLS");
+
+				 switch(tShirt)
+				 {
+				 	case 1 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice1 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 2 :  printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice2 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 3 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice3 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	case 4 : printf("Choose your size:\n1.S\n2.M\n3.L\n4.XL\n");
+				 			 scanf(" %d", &size);
+
+				 			 system("CLS");
+
+				 			 if(size == 1)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+
+				 			 }
+				 			 else if(size == 2)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else if(size == 3)
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+				 			 else
+				 			 {
+				 			 	printf("Enter quantity:\n");
+				 			 	scanf(" %d", &quantity);
+
+				 			 	system("CLS");
+
+				 			 	total = LVprice4 * quantity;
+
+				 			 	if(quantity == 1)
+				 			 	{
+				 			 		printf("The price of your shirt is %.2f\n", total);
+				 			 	}
+				 			 	else
+				 			 	{
+				 			 		printf("The price of your shirts is %.2f\n", total);
+				 			 	}
+				 			 }
+
+				 			 break;
+
+
+				 	default : printf("Incorrect input\n");
+
+
+
+
+				 }
+				 break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+    return 0;
+}
