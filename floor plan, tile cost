@@ -1,0 +1,27 @@
+I need to upgrade this about user inputing price of their tiles and the surface one tile covers
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+int main()
+{
+    int width,length,surface;
+	  float tileSurface = 0.3;
+	  float tileCost = 5;
+	  float tiles,total;
+
+	  printf("Please enter width and length of the floor in meters \n(press enter after entering a value):\n");
+	  scanf(" %d%d", &width, &length);
+
+	  surface = width * length;
+	  tiles = surface / tileSurface;
+	  total = tileCost * tiles;
+
+	  printf("It would take you %.1f tiles and it would cost you %.2f $\n", tiles, total);
+
+    return 0;
+}
