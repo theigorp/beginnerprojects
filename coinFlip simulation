@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+int main()
+{
+    srand(time(NULL));
+
+    int choice,side;
+
+    printf("Select your side(1 for heads, 2 for tales) :");
+    scanf(" %d", &choice);
+
+    switch(choice)
+    {
+        case 1 :
+        for(int i = 0; i < 1; i++)
+        {
+            side = (rand()%2 + 1);
+            printf("%d\n", side);
+        }
+
+        if( (side == 1) && (choice == 1) )
+        {
+            printf("You win!");
+        }
+        else
+        {
+            printf("You lose!");
+        }
+
+        break;
+
+
+        case 2 :
+        for(int i = 0; i < 1; i++)
+        {
+            side = (rand()%2 + 1);
+            printf("%d", side);
+        }
+
+        if( (side == 2) && (choice == 2) )
+        {
+            printf("You win!");
+        }
+        else
+        {
+            printf("You lose!");
+        }
+
+        break;
+
+
+
+        default : printf("Wrong input.");
+    }
+
+
+    return 0;
+}
