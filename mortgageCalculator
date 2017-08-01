@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+int main()
+{
+    int mortageAmount,givenTime,totalTimeW,totalTimeD;
+	float interestRate,mortageTotal;
+	char payMethod;
+	float payMonAmount;
+	float payWeeAmount;
+	float payDaiAmount;
+
+	printf("This program will calculate your mortage\n");
+	printf("Please enter your mortage amount:\n");
+	scanf(" %d", &mortageAmount);
+	system("CLS");
+	printf("Now enter interest rate in decimal(for e.g. if rate is 8 percent then 1.08)\n");
+	scanf(" %f", &interestRate);
+
+	mortageTotal = (float)interestRate * (float)mortageAmount;
+
+	system("CLS");
+
+	printf("Please enter how much time do you have to pay back the loan in months(e.g. 2 years = 24 months)\n");
+	scanf(" %d", &givenTime);
+
+	system("CLS");
+
+	printf("Please enter how often will you pay(monthly,weekly,daily)\n");
+	scanf(" %s", &payMethod);
+
+
+	if( (payMethod == 'm') || (payMethod == 'M') )
+	{
+		payMonAmount = mortageTotal / givenTime;
+
+		printf("You will need to pay %.3f monthly.\n", payMonAmount);
+	}
+	else if( (payMethod == 'w') || (payMethod == 'W') )
+	{
+		totalTimeW = 52 * givenTime/12;
+		payWeeAmount = mortageTotal / totalTimeW;
+
+		printf("You will need to pay approximately %.3f weekly.\n", payWeeAmount);
+	}
+	else if( (payMethod == 'd') || (payMethod == 'D') )
+	{
+		totalTimeD = givenTime * 30 + givenTime/12 * 5;
+		payDaiAmount = mortageTotal / totalTimeD;
+
+		printf("You will need to pay %.3f daily.\n", payDaiAmount);
+	}
+	else
+	{
+		printf("Incorrect input.\n");
+	}
+
+
+
+
+    return 0;
+}
