@@ -1,4 +1,4 @@
-I need to upgrade this about user inputing price of their tiles and the surface one tile covers
+After update:
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,19 +9,35 @@ I need to upgrade this about user inputing price of their tiles and the surface 
 
 int main()
 {
-    int width,length,surface;
-	  float tileSurface = 0.3;
-	  float tileCost = 5;
-	  float tiles,total;
+	int width,length;
+    float surface;
+	float tileSurface,tWidth,tLength;
+	float tileCost = 5;
+	float tiles,total;
 
-	  printf("Please enter width and length of the floor in meters \n(press enter after entering a value):\n");
-	  scanf(" %d%d", &width, &length);
+	printf("Please enter width and length of the floor in meters \n(press enter after entering a value):\n");
+	scanf(" %d%d", &width, &length);
 
-	  surface = width * length;
-	  tiles = surface / tileSurface;
-	  total = tileCost * tiles;
+	system("CLS");
 
-	  printf("It would take you %.1f tiles and it would cost you %.2f $\n", tiles, total);
+	printf("Enter width and length of your tiles(in meters for e.g. 14x21cm = 0.14x0.21m):\n");
+	scanf(" %f %f", &tWidth, &tLength);
+
+	system("CLS");
+
+	printf("Enter cost of 1 tile:\n");
+	scanf(" %f", &tileCost);
+
+	system("CLS");
+
+    surface = width * length;
+	tileSurface = tWidth * tLength;
+	tiles = surface / tileSurface;
+	total = tileCost * tiles;
+
+	printf("It would take you %.1f tiles and it would cost you %.2f $\n", tiles, total);
+
+
 
     return 0;
 }
