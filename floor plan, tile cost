@@ -10,7 +10,7 @@ After update:
 int main()
 {
 	int width,length;
-    float surface;
+    	float surface;
 	float tileSurface,tWidth,tLength;
 	float tileCost = 5;
 	float tiles,total;
@@ -30,7 +30,7 @@ int main()
 
 	system("CLS");
 
-    surface = width * length;
+    	surface = width * length;
 	tileSurface = tWidth * tLength;
 	tiles = surface / tileSurface;
 	total = tileCost * tiles;
