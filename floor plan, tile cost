@@ -12,7 +12,7 @@ int main()
 	int width,length;
     	float surface;
 	float tileSurface,tWidth,tLength;
-	float tileCost = 5;
+	float tileCost;
 	float tiles,total;
 
 	printf("Please enter width and length of the floor in meters \n(press enter after entering a value):\n");
