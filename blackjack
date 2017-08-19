@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+int main()
+{
+	printf("Welcome to uhh lets say Simplified Blackjack since creating a real one is\ncomplicated!Enjoy!\n");
+
+	srand(time(NULL));
+
+	int action;
+    int dealer1,player1;
+    int dealer2,player2;
+
+	for(int i = 0; i < 2; i++)
+	{
+		dealer1 = ( rand()%14 + 1);
+		dealer2 = ( rand()%14 + 1);
+	}
+
+	for (int i = 0; i < 2; ++i)
+	{
+		player1 = ( rand()%14 + 1);
+		player2 = ( rand()%14 + 1);
+	}
+
+	printf("%d %d\n", dealer1, dealer2);
+	printf("%d %d\n", player1, player2);
+
+	printf("1.Hit\n2.Stand\n");
+
+	switch(action)
+	{
+
+
+
+
+
+		default : printf("You are drunk go home before you lose all of your money.\n");
+	}
+
+
+
+
+    return 0;
+}
