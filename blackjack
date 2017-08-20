@@ -11,20 +11,20 @@ int main()
 
 	srand(time(NULL));
 
-	int action;
-    int dealer1,player1;
-    int dealer2,player2;
+	int action = 0;
+	int dealer1, player1;
+	int dealer2, player2;
 
-	for(int i = 0; i < 2; i++)
+	for (int i = 0; i < 2; i++)
 	{
-		dealer1 = ( rand()%14 + 1);
-		dealer2 = ( rand()%14 + 1);
+		dealer1 = (rand() % 14 + 1);
+		dealer2 = (rand() % 14 + 1);
 	}
 
 	for (int i = 0; i < 2; ++i)
 	{
-		player1 = ( rand()%14 + 1);
-		player2 = ( rand()%14 + 1);
+		player1 = (rand() % 14 + 1);
+		player2 = (rand() % 14 + 1);
 	}
 
 	printf("%d %d\n", dealer1, dealer2);
@@ -32,18 +32,19 @@ int main()
 
 	printf("1.Hit\n2.Stand\n");
 
-	switch(action)
+	switch (action)
 	{
+	case 1 :
+		break;
 
+	case 2 :
+		break;
 
-
-
-
-		default : printf("You are drunk go home before you lose all of your money.\n");
+	default: printf("You are drunk go home before you lose all of your money.\n");
 	}
 
 
 
 
-    return 0;
+	return 0;
 }
