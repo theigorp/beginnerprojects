@@ -1,0 +1,168 @@
+Line 152 fucks things up i think. Wont print out everything correctly, dont remember the problem, too lazy to compile it again.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
+void surveyResults();
+
+struct activeMembers
+{
+	int usernameID;
+	int age;
+	char uniqueUsername[50];
+};
+
+int main()
+{
+
+
+	printf("There are currently 3 members active!\nType in regnew to register!\n\n\n");
+
+
+	struct activeMembers member25;
+	struct activeMembers member38;
+	struct activeMembers member42;
+
+	member25.usernameID = 12942;
+	member38.usernameID = 90281;
+	member42.usernameID = 58129;
+
+
+	int kickJoin;
+
+
+	printf("\t\t\tWe are currently making a survey!\n\nTo all active members would you care and take it to get 5 days of premium access to the features?\nPress 1 to join, 2 to skip.");
+	scanf(" %d", &kickJoin);
+
+	system("cls");
+
+	switch (kickJoin)
+	{
+	case 1 :
+		printf("Initializing survey for member with this userID = %d....Please wait.\n", member25.usernameID);
+		printf("Starting the survey...\n");
+
+		printf("Please enter your age: ");
+		scanf(" %d", &member25.age);
+		system("cls");
+		printf("Please enter your unique username: ");
+		scanf(" %s", &member25.uniqueUsername);
+
+		printf("Thank you for completing the survey %d your 5 day premium account will be verified on the next startup!", member25.usernameID);
+
+		system("cls");
+
+
+		printf("Initializing survey for member with this userID = %d....Please wait.\n", member38.usernameID);
+		printf("Starting the survey...\n");
+
+		printf("Please enter your age: ");
+		scanf(" %d", &member38.age);
+		system("cls");
+		printf("Please enter your unique username: ");
+		scanf(" %s", &member38.uniqueUsername);
+
+		printf("Thank you for completing the survey %d your 5 day premium account will be verified on the next startup!", member38.usernameID);
+
+		system("cls");
+
+
+		printf("Initializing survey for member with this userID = %d....Please wait.\n", member42.usernameID);
+		printf("Starting the survey...\n");
+
+		printf("Please enter your age: ");
+		scanf(" %d", &member42.age);
+		system("cls");
+		printf("Please enter your unique username: ");
+		scanf(" %s", &member42.uniqueUsername);
+
+		system("cls");
+
+		printf("Thank you for completing the survey %d your 5 day premium account will be verified on the next startup!", member42.usernameID);
+
+		system("cls");
+
+		break;
+
+
+
+	case 2:
+		printf("You have been banned for 3 days for not obeying the orders of Da_Network\n");
+
+		break;
+
+	}
+
+	if (kickJoin == 2)
+	{
+		printf("Your IP address shall be revealed to the underbosses.\n");
+	}
+	else
+	{
+		surveyResults();
+	}
+	
+
+
+	return 0;
+}
+
+
+void surveyResults()
+{
+	struct activeMembers
+	{
+		int usernameID;
+		int age;
+		char uniqueUsername[50];
+	};
+
+	struct activeMembers member25;
+	struct activeMembers member38;
+	struct activeMembers member42;
+
+	member25.usernameID = 12942;
+	member38.usernameID = 90281;
+	member42.usernameID = 58129;
+	
+	
+	char *password[21] = { "danetworkneworder" };
+	char *passConfirm[21];
+
+	int adminUsernameID;
+
+	printf("Admin, please enter your username ID: ");
+	scanf(" %d", &adminUsernameID);
+
+	printf("Please enter the password to access survey results: ");
+	scanf(" %s", passConfirm);
+
+	if ( strcmp(passConfirm, "danetworkneworder") == 0 )
+	{
+		printf("Preparing surveyResults...");
+		printf("Initializing...");
+
+		FILE *fp = fopen("C:\\Users\\D\\Pictures\\adminLog.txt", "w");
+		fprintf(fp, "The surveyResults have been accessed last time by %d", adminUsernameID);
+
+		fclose(fp);
+
+		printf("\t\tSURVEY RESULTS\n\n");
+
+		printf("%d\t%d\t%d\n", member25.usernameID, member38.usernameID, member42.usernameID);
+		printf("%d\t%d\t%d\n", member25.age, member38.age, member42.age);
+		printf("%s\t%s\t%s\n", member25.uniqueUsername, member38.uniqueUsername, member42.uniqueUsername);
+
+
+	}
+	else
+	{
+		printf("You have been permanently banned and put on Da_Network blacklist.\n");
+	}
+
+	return;
+}
