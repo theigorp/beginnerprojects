@@ -1,0 +1,30 @@
+Program will shut down a Windows computer without a previous warning. Currently working on another version which will shut a computer down
+after n seconds.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+//shutdown -s
+int main()
+{
+	char name1[20];
+	char name2[20];
+
+	printf("Please enter your first name: ");
+	fgets(name1, 20, stdin);
+	printf("Please enter your last name: ");
+	fgets(name2, 20, stdin);
+
+	name1[0] = toupper(name1[0]);
+	name2[0] = toupper(name1[0]);
+
+	system("shutdown /p");
+
+	printf("Your name is %s %s", name1, name2);
+
+
+	return 0;
+}
