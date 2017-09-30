@@ -1,13 +1,12 @@
 Program will shut down a Windows computer without a previous warning. Currently working on another version which will shut a computer down
 after n seconds.
 
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-#include <math.h>
-#include <time.h>
+
 //shutdown -s
+
 int main()
 {
 	char name1[20];
