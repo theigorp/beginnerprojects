@@ -1,5 +1,6 @@
 Program will shut down a Windows computer without a previous warning. Currently working on another version which will shut a computer down
-after n seconds.
+after n given seconds. Why those chars and fgets you may ask? Creating an "undercover" program(some would call it virus) that does one 
+action that you see and can interact with, while its running cmd and shutting your PC in another moment. 
 
 
 #include <stdio.h>
