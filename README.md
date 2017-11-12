@@ -1,2 +1,2 @@
 # beginnerprojects
-Just some projects i made when i was starting to program. 99% of them are in C. BTW i have no idea how GitHub works :D
+Just some projects I made when I was starting to program. Most of them are in C. BTW I have no idea how GitHub works :D
